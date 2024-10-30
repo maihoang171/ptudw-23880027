@@ -4,8 +4,11 @@ const express = require("express");
 const router = express.Router();
 const controller = require("../controllers/userController");
 const { body, validationResult } = require('express-validator');
+const authController = require("../controllers/authController")
 
-router.get("/checkout", controller.checkout)
+router.use(authController.isLoggedIn)
+router.get("/checkout", controller
+    .checkout)
 router.post("/placeorders",
     body('firstName').notEmpty().withMessage('First Name is required!'),
     body('lastName').notEmpty().withMessage('Last Name is required!'),
@@ -25,5 +28,7 @@ router.post("/placeorders",
         next();
     },
     controller.placeOrders)
-
+router.get('/my-account', (req, res) => {
+    res.render('my-account')
+})
 module.exports = router;

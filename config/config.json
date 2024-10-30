@@ -4,7 +4,7 @@
     },
     "test": {
         "username": "postgres",
-        "password": "postgres",
+        "password": "Maihoang171@",
         "database": "eshopDB",
         "host": "127.0.0.1",
         "dialect": "postgres"
