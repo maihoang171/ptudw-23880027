@@ -11,10 +11,7 @@
         "dialect": "postgres"
     },
     "production": {
-        "username": "ptudwprojectdb",
-        "password": "504tSEKe9fG8bke6ZW9n091NBO7IEYBc",
-        "database": "ptudwprojectdb_j3v9",
-        "host": "dpg-csh1ojo8fa8c7395lalg-a.singapore-postgres.render.com",
+        "use_env_variable": "POSTGRESQL_URL",
         "dialect": "postgres",
         "dialectOptions": {
             "ssl": {
