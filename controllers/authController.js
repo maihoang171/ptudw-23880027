@@ -2,7 +2,6 @@
 const controller = {};
 const passport = require("./passport")
 const models = require("../models");
-const { where } = require("sequelize");
 controller.show = (req, res) => {
     if (req.isAuthenticated()) {
         return res.redirect('/');
