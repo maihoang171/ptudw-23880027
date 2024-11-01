@@ -62,8 +62,9 @@ app.use((req, res, next) => {
     res.locals.isLoggedIn = req.isAuthenticated();
     next();
 })
-app.use("/products", require("./routes/productsRouter"))
+
 app.use("/", require("./routes/indexRouter"));
+app.use("/products", require("./routes/productsRouter"))
 app.use("/users", require("./routes/authRouter"));
 app.use("/users", require("./routes/userRouter"));
 

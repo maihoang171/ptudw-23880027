@@ -26,6 +26,5 @@ controller.showPage = (req, res, next) => {
     if (pages.includes(req.params.page))
         return res.render(req.params.page);
     next()
-    res.render(req.params.page)
 }
 module.exports = controller;

@@ -11,7 +11,6 @@
 // module.exports = controller;
 
 const controller = {};
-const { where } = require("sequelize");
 const models = require("../models")
 const sequelize = require("sequelize")
 const Op = sequelize.Op;
