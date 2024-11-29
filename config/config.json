@@ -7,23 +7,23 @@
                 "require": true,
                 "rejectUnauthorized": false
             }
-        }
-    },
+        },
 
-    "test": {
-        "username": "postgres",
-        "password": "Maihoang171@",
-        "database": "eshopDB",
-        "host": "127.0.0.1",
-        "dialect": "postgres"
-    },
-    "production": {
-        "use_env_variable": "POSTGRESQL_URL",
-        "dialect": "postgres",
-        "dialectOptions": {
-            "ssl": {
-                "require": true,
-                "rejectUnauthorized": false
+        "test": {
+            "username": "postgres",
+            "password": "Maihoang171@",
+            "database": "eshopDB",
+            "host": "127.0.0.1",
+            "dialect": "postgres"
+        },
+        "production": {
+            "use_env_variable": "POSTGRESQL_URL",
+            "dialect": "postgres",
+            "dialectOptions": {
+                "ssl": {
+                    "require": true,
+                    "rejectUnauthorized": false
+                }
             }
         }
     }
