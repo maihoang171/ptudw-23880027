@@ -17,7 +17,7 @@ router.post("/placeorders",
     body('address').notEmpty().withMessage('Address is required!'),
     (req, res, next) => {
         let errors = validationResult(req);
-        if (req.body.addressId == 0 || !errors.isEmpty()) {
+        if (req.body.addressId == "0" && !errors.isEmpty()) {
             let errorArray = errors.array();
             let message = '';
             for (let i = 0; i < errorArray.length; i++) {

@@ -30,5 +30,6 @@
         "redis": "^4.7.0",
         "redis-cli": "^2.1.2",
         "sequelize": "^6.37.4"
-    }
+    },
+    "devDependencies": {}
 }
